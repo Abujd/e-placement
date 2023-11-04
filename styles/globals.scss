@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fontFace.scss";
+
+
+:root {
+  --primary: 31, 32, 34;
+  --error: 203, 50, 3;
+  --disable: 198, 196, 186;
+  --green: 61, 174, 86;
+  --yellow: 236, 188, 19;
+  --purple: 174, 84, 182;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --neutral: 236, 234, 227;
+}
+
+body{
+  color: rgb(var(--primary));
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
