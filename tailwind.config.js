@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      primary: "rgb(var(--primary))",
+      error: "rgb(var(--error))",
+      disable: "rgb(var(--disable))",
+      green: "rgb(var(--green))",
+      yellow: "rgb(var(--yellow))",
+      purple: "rgb(var(--purple))",
+      neutral: "rgb(var(--neutral))"
+    },
     extend: {},
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [require("@tailwindcss/aspect-ratio")],
 }
